@@ -27,14 +27,14 @@ class LoginForm extends React.Component{
     }
     onSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state);
-        axios.post('http://localhost:8081/signup',this.state).then(function (response) {
+        //console.log(this.state);
+        axios.post('http://localhost:3000/Signup',this.state).then(function (response) {
             console.log(response.data);
           })
           .catch(function (error) {
             console.log(error);
           });
-        //this.props.history.push('/login');
+        this.props.history.push('/login');
     }
 
     render(){

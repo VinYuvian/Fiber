@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Grid, Button,Segment } from 'semantic-ui-react';
 import axios from 'axios';
+import setAuth from '../utils/Auth'
 //import { Menu } from 'semantic-ui-react';
 
 class Login extends React.Component{
@@ -15,13 +16,15 @@ class Login extends React.Component{
     onSubmit = (e) => {
         e.preventDefault();
         console.log(this.state);
-        axios.post('http://localhost:8081/login',this.state).then(function (response) {
-            console.log(response);
+        axios.post('http://localhost:3000/Login',this.state).then(function (response) {
+            const token = response.data.token;
+            localStorage.setItem('jwtToken',token);
+            setAuth(token);
           })
           .catch(function (error) {
             console.log(error);
           });
-        //this.props.history.push('/user');
+        this.props.history.push('/user');
 
     }
 
