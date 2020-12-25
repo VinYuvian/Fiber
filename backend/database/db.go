@@ -1,6 +1,6 @@
 package database
 import(
-	"Go-Fiber/models"
+	"github.com/VinYuvian/Fiber/models"
 )
 
 var Users = []models.User{

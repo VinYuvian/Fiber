@@ -1,7 +1,7 @@
 package handlers
 
 import (
-	"Go-Fiber/database"
+	"github.com/VinYuvian/Fiber/database"
 	"context"
 	"github.com/gofiber/fiber/v2"
 	"go.mongodb.org/mongo-driver/bson"

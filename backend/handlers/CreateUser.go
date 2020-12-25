@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"Go-Fiber/database"
-	"Go-Fiber/models"
+	"github.com/VinYuvian/Fiber/database"
+	"github.com/VinYuvian/Fiber/models"
 	"context"
 	"github.com/gofiber/fiber/v2"
 )

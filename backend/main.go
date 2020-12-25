@@ -1,16 +1,22 @@
 package main
 
 import (
-	"git@github.com:VinYuvian/Fiber/handlers"
+	"fmt"
+	"github.com/VinYuvian/Fiber/handlers"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
+	"github.com/joho/godotenv"
 	"log"
 	"os"
 )
 
 
 func main() {
+	err:=godotenv.Load(".env")
+	if err!=nil{
+		fmt.Println("error loading .env file")
+	}
 	app := fiber.New()
 	file,err := os.OpenFile("log.log",os.O_RDWR|os.O_CREATE|os.O_APPEND,0666)
 	if err!=nil{
