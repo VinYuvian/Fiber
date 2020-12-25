@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="152a53a2-fc51-41fe-80fe-41388d0b71cd" name="Default Changelist" comment="">
+    <list default="true" id="01218d85-30bb-494c-80cf-814b1c2bfe10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/handlers/DeleteUser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/GetUser.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/GetUsers.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/login.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/CreateUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/CreateUser.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/GetUsers.go" beforeDir="false" afterPath="$PROJECT_DIR$/user/GetUsers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoapp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demoapp/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoapp/src/components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demoapp/src/components/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoapp/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demoapp/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demoapp/src/components/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demoapp/src/components/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/CreateUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/CreateUser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/DeleteUser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/GetUser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/GetUsers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/UserUpload.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/UserUpload.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/login.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +40,14 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
-  <component name="ProjectId" id="1lsOLPCJvtSjuYe0MLJrP3OCc7z" />
+  <component name="ProjectId" id="1m2zGkJeP1ogyjqwSavoYQ2m0dP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -46,6 +55,27 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="backend" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="backend" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
@@ -61,7 +91,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

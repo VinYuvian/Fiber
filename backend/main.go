@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Go-Fiber/user"
+	"git@github.com:VinYuvian/Fiber/handlers"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/fiber/v2/middleware/logger"
@@ -25,13 +25,13 @@ func main() {
 	app.Get("/", func(ctx *fiber.Ctx) error {
 		return ctx.SendString("HELLO")
 	})
-	app.Post("/User/upload",user.UserUpload)
-	//app.Get("/Users",user.AuthRequired(),user.GetUsers)
-	app.Get("/Users",user.GetUsers)
-	app.Post("/Signup",user.CreateUser)
-	app.Get("/Users/:id",user.GetUser)
-	app.Delete("/Users/:id",user.DeleteUser)
-	app.Post("/Login",user.Login)
+	app.Post("/User/upload", handlers.UserUpload)
+	//app.Get("/Users",handlers.AuthRequired(),handlers.GetUsers)
+	app.Get("/Users", handlers.GetUsers)
+	app.Post("/Signup", handlers.CreateUser)
+	app.Get("/Users/:email", handlers.GetUser)
+	app.Delete("/Users/:email", handlers.DeleteUser)
+	app.Post("/Login", handlers.Login)
 	err = app.Listen("localhost:3000")
 	if err != nil {
 		panic(err)

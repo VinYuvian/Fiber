@@ -1,9 +1,9 @@
 package database
 import(
-	"Go-Fiber/types"
+	"Go-Fiber/models"
 )
 
-var Users = []types.User{
+var Users = []models.User{
 	{
 		Id:        1,
 		FirstName: "Vinay",
