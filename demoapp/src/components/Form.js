@@ -28,7 +28,7 @@ class LoginForm extends React.Component{
     onSubmit = (e) => {
         e.preventDefault();
         //console.log(this.state);
-        axios.post('http://localhost:3000/Signup',this.state).then(function (response) {
+        axios.post('http://192.168.10.10:3000/api/Signup',this.state).then(function (response) {
             console.log(response.data);
           })
           .catch(function (error) {

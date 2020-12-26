@@ -1,0 +1,16 @@
+version : "3"
+services :
+  fiber :
+    build : ./backend
+    ports :
+      - 3000:3000
+  
+  front-end :
+    build : ./demoapp
+    ports :
+      - 8080:80
+      - 443:443
+    depends_on :
+      - fiber
+      
+      
