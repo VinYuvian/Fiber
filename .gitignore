@@ -5,3 +5,4 @@
 /.vagrant
 /mongo-init.js
 /mongo-volume
+.env
