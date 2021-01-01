@@ -16,7 +16,7 @@ class Login extends React.Component{
     onSubmit = (e) => {
         e.preventDefault();
         console.log(this.state);
-        axios.post('http://192.168.10.10:3000/api/Login',this.state).then(function (response) {
+        axios.post(window.REACT_APP_API_URL+'/api/Login',this.state).then(function (response) {
             const token = response.data.token;
             localStorage.setItem('jwtToken',token);
             setAuth(token);
