@@ -8,20 +8,20 @@ spec:
       imagePullPolicy: Always # use cache or pull image for agent
       resources:  # limits the resources your build contaienr
         requests:
-          memory: "500Mi"
-          cpu: "0.2"
+          memory: "3Gi"
+          cpu: "0.5"
         limits:
-          memory: "500Mi"
+          memory: "3Gi"
     - name: node
       image: node:12-alpine3.10
       command: ["tail", "-f", "/dev/null"]
       imagePullPolicy: Always
       resources:  # limits the resources your build contaienr
         requests:
-          memory: "500Mi"
-          cpu: "0.2"
+          memory: "3Gi"
+          cpu: "0.5"
         limits:
-          memory: "500Mi"
+          memory: "3Gi"
     - name: docker
       image: docker:18.06.1
       command: ["tail", "-f", "/dev/null"]
