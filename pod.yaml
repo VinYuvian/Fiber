@@ -8,7 +8,7 @@ spec:
       imagePullPolicy: Always # use cache or pull image for agent
       resources:  # limits the resources your build contaienr
         requests:
-          memory: "3Gi"
+          memory: "8Gi"
           cpu: "0.5"
         limits:
           memory: "3Gi"
@@ -18,7 +18,7 @@ spec:
       imagePullPolicy: Always
       resources:  # limits the resources your build contaienr
         requests:
-          memory: "3Gi"
+          memory: "8Gi"
           cpu: "0.5"
         limits:
           memory: "3Gi"
