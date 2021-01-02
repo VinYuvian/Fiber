@@ -9,7 +9,7 @@ spec:
       resources:  # limits the resources your build contaienr
         requests:
           memory: "1Gi"
-          cpu: "200Mi"
+          cpu: "0.2"
         limits:
           memory: "1Gi"
     - name: docker
