@@ -6,6 +6,7 @@ pipeline {
       yamlFile 'pod.yaml'  // path to the pod definition relative to the root of our project 
       defaultContainer 'golang'  // define a default container if more than a few stages use it, will default to jnlp container
       podRetention never()
+      slaveConnectTimeout 30
     }
   }
   stages {
