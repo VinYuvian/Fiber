@@ -11,10 +11,10 @@ spec:
         mountPath: /var/lib/docker/volumes/jenkins_home
       resources:  # limits the resources your build contaienr
         requests:
-          memory: "250Mi"
-          cpu: "0.5"
+          memory: "120Mi"
+          cpu: "1"
         limits:
-          memory: "250Mi"
+          memory: "150Mi"
     - name: docker
       image: docker:18.06.1
       command: ["tail", "-f", "/dev/null"]
