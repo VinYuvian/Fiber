@@ -15,19 +15,6 @@ spec:
           cpu: "0.5"
         limits:
           memory: "250Mi"
-    - name: node
-      image: node:12-alpine3.10
-      command: ["tail", "-f", "/dev/null"]
-      imagePullPolicy: Always
-      volumeMounts:
-        - name: redis-storage
-          mountPath: /var/lib/docker/volumes/jenkins_home
-      resources:  # limits the resources your build contaienr
-        requests:
-          memory: "250Mi"
-          cpu: "0.5"
-        limits:
-          memory: "250Mi"
     - name: docker
       image: docker:18.06.1
       command: ["tail", "-f", "/dev/null"]
