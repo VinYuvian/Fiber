@@ -14,7 +14,7 @@ spec:
           memory: "150Mi"
           cpu: "0.8"
         limits:
-          memory: "150Mi"
+          memory: "250Mi"
           cpu: "0.8"
     - name: docker
       image: docker:18.06.1
