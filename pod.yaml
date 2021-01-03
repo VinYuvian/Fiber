@@ -8,7 +8,7 @@ spec:
       imagePullPolicy: Always # use cache or pull image for agent
       volumeMounts:
       - name: redis-storage
-        mountPath: /var/lib/docker/volumes/jenkins_home
+        mountPath: /var/jenkins
       resources:  # limits the resources your build contaienr
         requests:
           memory: "120Mi"
