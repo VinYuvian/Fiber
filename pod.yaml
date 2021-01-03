@@ -11,10 +11,10 @@ spec:
         mountPath: /var/jenkins
       resources:  # limits the resources your build contaienr
         requests:
-          memory: "100Mi"
+          memory: "150Mi"
           cpu: "0.4"
         limits:
-          memory: "100Mi"
+          memory: "150Mi"
           cpu: "0.5"
     - name: docker
       image: docker:18.06.1
