@@ -21,7 +21,7 @@ spec:
       imagePullPolicy: Always
       volumeMounts:
         - name: redis-storage
-           mountPath: /var/lib/docker/volumes/jenkins_home
+          mountPath: /var/lib/docker/volumes/jenkins_home
       resources:  # limits the resources your build contaienr
         requests:
           memory: "1Gi"
