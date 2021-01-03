@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    name 'kubernetes2'
+    label 'kubernetes2'
     kubernetes {
       cloud 'kubernetes2'
       label 'promo-app'  // all your pods will be named with this prefix, followed by a unique id
