@@ -10,7 +10,7 @@ pipeline {
     }
   }
   options{
-    skipDefaultCheckOut()
+    skipDefaultCheckout()
   }
   
   stages {
