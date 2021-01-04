@@ -9,21 +9,13 @@ spec:
       volumeMounts:
       - name: redis-storage
         mountPath: /var/jenkins
-      - name: jnlp
-        image: 'jenkins/inbound-agent:4.3-4-alpine'
-        volumeMounts:
-        - name: redis-storage
-          mountPath: /var/jenkins
-        env:
-        - name: JENKINS_TUNNEL
-          value: 192.168.10.15:50000
       resources:  # limits the resources your build contaienr
         requests:
-          memory: "150Mi"
-          cpu: "0.8"
+          memory: "3000Mi"
+          cpu: "1"
         limits:
-          memory: "250Mi"
-          cpu: "0.8"
+          memory: "300Mi"
+          cpu: "1"
     - name: docker
       image: docker:18.06.1
       command: ["tail", "-f", "/dev/null"]
