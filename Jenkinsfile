@@ -19,7 +19,7 @@ pipeline {
         checkoutToSubdirectory('/backend')
       }
       steps {  // no container directive is needed as the maven container is the default
-        git 'https://github.com/VinYuvian/Fiber.git'
+        git credentialsId:'gitCredentials',url:'https://github.com/VinYuvian/Fiber.git'
         sh "go version"   
       }
     }
