@@ -8,9 +8,15 @@ pipeline {
       defaultContainer 'golang'  // define a default container if more than a few stages use it, will default to jnlp container
       podRetention never()
     }
+  options{
+    skipDefaultCheckOut()
+  }
   }
   stages {
     stage('Build') {
+      opyions{
+        checkoutToSubdirectory('/backend')
+      }
       steps {  // no container directive is needed as the maven container is the default
         sh "go version"   
       }
