@@ -15,7 +15,7 @@ pipeline {
   
   stages {
     stage('Build') {
-      opyions{
+      options{
         checkoutToSubdirectory('/backend')
       }
       steps {  // no container directive is needed as the maven container is the default
