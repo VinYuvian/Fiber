@@ -35,4 +35,4 @@ spec:
         path: /var/run/docker.sock
     - name: jenkins-home
       hostPath:
-        path:/jenkins
+        path: /jenkins
